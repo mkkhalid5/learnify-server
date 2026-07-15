@@ -1393,7 +1393,6 @@ app.post(
             sendSuccess(res, 200, "You are already enrolled in this course", serializeEnrollment(existing));
             return;
         }
-
         const now = new Date();
         const document: EnrollmentDocument = {
             userId,
