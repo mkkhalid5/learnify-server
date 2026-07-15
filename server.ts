@@ -1364,7 +1364,6 @@ app.post(
             sendError(res, 400, "Validation failed", { issues });
             return;
         }
-
         const courseId = parseObjectId(courseIdRaw);
 
         if (!courseId) {
